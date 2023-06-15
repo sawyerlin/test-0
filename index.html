@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>电话接线平台</title>
+    <link rel="stylesheet" href="static/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>电话接线平台</h1>
+    </header>
+    <main id="controls" style="display: flex; flex-direction: column;">
+        <table id="my-table">
+            <thead>
+                <th>电话号码</th>
+                <th>相关信息</th>
+                <th>链接状态</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="incoming-handler">
+            <div>有来电</div>
+            <button id="button-accept-incoming">接受</button>
+            <button id="button-reject-incoming">拒绝</button>
+            <button id="button-hangup-incoming" class="hide">挂断</button>
+        </div>
+    </main>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/twilio.min.js"></script>
+    <script src="static/index.js"></script>
+  </body>
+</html>
